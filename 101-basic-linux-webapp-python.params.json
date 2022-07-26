@@ -14,6 +14,12 @@
         "metadata": {
           "description": "The Runtime stack of current web app"
         }
-      }
+      },
+      "location": {
+        "value": "[resourceGroup().location]",
+        "metadata": {
+          "description": "Location for all resources."
+        }
+    }
   }
 }
