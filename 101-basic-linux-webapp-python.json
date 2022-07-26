@@ -2,35 +2,6 @@
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-      "webAppName": {
-        "type": "string",
-        "defaultValue": "AzureLinuxApp23490",
-        "metadata": {
-          "description": "Base name of the resource such as web app name and app service plan "
-        },
-        "minLength": 2
-      },
-      "sku": {
-        "type": "string",
-        "defaultValue": "S1",
-        "metadata": {
-          "description": "The SKU of App Service Plan "
-        }
-      },
-      "linuxFxVersion": {
-        "type": "string",
-        "defaultValue": "PYTHON:3.9",
-        "metadata": {
-          "description": "The Runtime stack of current web app"
-        }
-      },
-      "location": {
-        "type": "string",
-        "defaultValue": "[resourceGroup().location]",
-        "metadata": {
-          "description": "Location for all resources."
-        }
-      }
     },
     "variables": {
       "webAppPortalName": "[concat(parameters('webAppName'), '-webapp')]",
