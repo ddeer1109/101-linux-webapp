@@ -4,33 +4,19 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "webAppName": {
-        "type": "string",
-        "value": "[concat('webapp-daniel-', uniqueString(resourceGroup().location))]",
-        "metadata": {
-          "description": "Base name of the resource such as web app name and app service plan "
-        },
-        "minLength": 2
+        "value": "[concat('webapp-daniel-', uniqueString(resourceGroup().location))]"
       },
       "sku": {
-        "type": "string",
-        "value": "S1",
-        "metadata": {
-          "description": "The SKU of App Service Plan "
-        }
+        "value": "S1"
       },
       "linuxFxVersion": {
-        "type": "string",
         "value": "PYTHON:3.9",
         "metadata": {
           "description": "The Runtime stack of current web app"
         }
       },
       "location": {
-        "type": "string",
-        "value": "[resourceGroup().location]",
-        "metadata": {
-          "description": "Location for all resources."
-        }
+        "value": "[resourceGroup().location]"
     }
   }
 }
