@@ -16,7 +16,7 @@
         }
       },
       "location": {
-        "value": "[resourceGroup().location]",
+        "value": "westus3",
         "metadata": {
           "description": "Location for all resources."
         }
